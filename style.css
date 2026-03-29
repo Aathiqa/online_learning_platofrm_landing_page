@@ -75,3 +75,51 @@ navigation ul li a {
     font-size: 25px;
     font-weight: bold;
 }
+
+.hero-content {
+    padding-top: 5%;
+    display: flex;
+}
+
+/* should start with 45% of the container’s main-axis size (likely width */
+.text-box {
+    flex-basis: 45%;
+    padding: 40px;
+}
+
+.text-box h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.text-box p {
+    padding: 20px 0;
+    color: #9392a3;
+}
+
+.text-box span {
+    font-weight: normal;
+}
+
+.img-box {
+    flex-basis: 50%;
+}
+
+.img-box img {
+    width: auto;
+    height: 70vh;
+}
+
+.btn {
+    padding: 50px 0;
+}
+
+.btn a {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 35px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 25px;
+}
