@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* default is content-box */
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    background: #dBdBdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-area {
+    background: #fff;
+    min-height: 90vh;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* global scope */
+:root {
+    --primary-color: #6ef685;
+    --secondary-color: #0B0B00;
+}
+
+ul {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* utility */
+.container {
+    max-width: 95%;
+    /* centers the element horizontally within its parent container */
+    margin: auto;
+}
+
+/*  navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navigation ul li {
+    display: inline;
+    padding: 10px;
+    margin: 0;
+    /* controls what happens when content is larger than its container */
+    /* for 'auto' scrollbars appear only when needed */
+    overflow: auto;
+}
+
+/*
+navigation ul li a {
+    color: var(--secondary-color);
+    
+}
+    */
+
+.navigation ul li a:hover {
+    color: var(--primary-color);
+}
+
+.logo {
+    font-size: 20 px;
+    font-weight: bold;
+}
